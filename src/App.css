@@ -1,0 +1,83 @@
+
+.navbar{
+    width: auto;
+    background-color: rgba(255, 0, 33, 0.5);
+    display: flex;
+    justify-content: center;
+}
+error{
+    display: flex;
+    margin: 25px;
+    justify-content: center;
+    text-justify: auto;
+    justify-self: center;
+    font-size: 50px;
+    font-family: roboto, monospace;
+    text-decoration: underline;
+
+}
+
+.logo{
+    display: flex;
+    justify-self: left;
+    justify-content: center;
+    width: 10%;
+    height: 10%;
+}
+
+.search{
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+}
+body{
+
+    background-image: url("https://www.svgbackgrounds.com/wp-content/uploads/2021/05/protruding-squares-orange-background.png") !important;
+}
+
+.holder{
+
+}
+.carddiv{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+.cards:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 50px 25px rgba(0,0,0,0.6);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "image" "text" "stats";
+    justify-content: center;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: roboto, monospace;
+    text-align: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin:30px;
+}
+
+.cardimage {
+    grid-area: image;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+.cardtext {
+    grid-area: text;
+}
+.cardstats {
+    grid-area: stats;
+}
