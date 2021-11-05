@@ -1,20 +1,66 @@
-
+app{
+    background: black;
+}
 .navbar{
     width: auto;
-    background-color: rgba(255, 0, 33, 0.5);
     display: flex;
     justify-content: center;
 }
-error{
-    display: flex;
-    margin: 25px;
-    justify-content: center;
-    text-justify: auto;
-    justify-self: center;
-    font-size: 50px;
-    font-family: roboto, monospace;
-    text-decoration: underline;
+.holder{
 
+    /*background-image: url("https://www.svgbackgrounds.com/wp-content/uploads/2021/05/protruding-squares-orange-background.png") !important;*/
+}
+.headerpage
+{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    transition: 0.5s;
+    z-index: -1;
+
+}
+
+.headerpage video
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+.headerpage1
+{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    transition: 0.5s;
+    z-index: 0;
+
+}
+
+.headerpage1 video
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
 }
 
 .logo{
@@ -34,26 +80,52 @@ error{
     width: 100%;
 
 }
-body{
+.reset{
+    display: flex;
+    padding: 5px;
+}
+.aboutme{
+    display: flex;
+    padding: 5px;
+}
+error{
+    display: flex;
+    margin: 25px;
+    justify-content: center;
+    text-justify: auto;
+    justify-self: center;
+    font-size: 50px;
+    font-family: roboto, monospace;
+    text-decoration: underline;
 
-    background-image: url("https://www.svgbackgrounds.com/wp-content/uploads/2021/05/protruding-squares-orange-background.png") !important;
+}
+body {
+    background: black;
+    color: black;
 }
 
-.holder{
-
-}
 .carddiv{
     display: flex;
     justify-content: center;
+    align-items: start;
     padding: 15px;
+    flex-flow: wrap row;
+    flex-direction: row;
 }
+
+.cardrow {
+    padding: .5vh;
+}
+
+
+
 .cards:hover {
     transform: scale(1.05);
     box-shadow: 5px 50px 25px rgba(0,0,0,0.6);
-}
 
+}
 .cards {
-    display: grid;
+    /*display: ;*/
     grid-template-columns: 300px;
     grid-template-rows: 210px 210px 80px;
     grid-template-areas: "image" "text" "stats";
@@ -66,18 +138,12 @@ body{
     transition: 0.5s ease;
     cursor: pointer;
     margin:30px;
+    padding: 10px;
 }
-
 .cardimage {
     grid-area: image;
 
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-size: cover;
-}
-.cardtext {
-    grid-area: text;
-}
-.cardstats {
-    grid-area: stats;
 }
